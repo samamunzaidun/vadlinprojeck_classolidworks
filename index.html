@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0,
+    minimum-scale=1.0,
+    user-scalable=no">
+
+  <title>Form Pendaftaran SolidWorks</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html, body{
+      width:100%;
+      min-height:100%;
+      font-family:Arial, sans-serif;
+      overflow-x:hidden;
+    }
+
+    body{
+
+      display:flex;
+
+      justify-content:center;
+
+      align-items:flex-start;
+
+      padding-top:20px;
+      padding-bottom:20px;
+
+      background:url('background.jpg');
+
+      background-size:cover;
+
+      background-position:center;
+
+      animation:bgGerak 20s linear infinite;
+    }
+
+    /* Background bergerak */
+    @keyframes bgGerak{
+
+      0%{
+        background-position:center bottom;
+      }
+
+      50%{
+        background-position:center center;
+      }
+
+      100%{
+        background-position:center top;
+      }
+
+    }
+
+    .wa-btn{
+
+  display:block;
+
+  text-align:center;
+
+  margin-top:10px;
+
+  background:#25D366;
+
+  color:white;
+
+  padding:12px;
+
+  border-radius:px;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+.wa-btn:hover{
+
+  background:#131f18;
+
+  transform:scale(1.03);
+}
+
+    /* Container */
+    .container{
+
+      width:330px;
+
+      padding:15px;
+
+      border-radius:22px;
+
+      background:rgba(255,255,255,0.15);
+
+      backdrop-filter:blur(12px);
+
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+
+      color:rgb(0, 0, 0);
+
+      max-height:95vh;
+
+      overflow-y:auto;
+
+      animation:muncul 1s ease;
+    }
+
+    /* Scrollbar */
+    .container::-webkit-scrollbar{
+      width:5px;
+    }
+
+    .container::-webkit-scrollbar-thumb{
+      background:rgba(255,255,255,0.5);
+      border-radius:10px;
+    }
+
+    /* Animasi muncul */
+    @keyframes muncul{
+
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+
+    }
+
+    /* Foto profil */
+    .profile{
+
+      width:95px;
+
+      height:95px;
+
+      border-radius:30%;
+
+      object-fit:cover;
+
+      display:block;
+
+      margin:auto;
+
+      border:3px solid rgb(7, 7, 7);
+
+      box-shadow:
+      0 0 15px rgba(255,255,255,0.5),
+      0 0 30px rgba(0,0,0,0.4);
+    }
+
+    h2{
+
+      text-align:center;
+
+      margin-top:10px;
+
+      margin-bottom:10px;
+
+      font-size:18px;
+    }
+
+    .info{
+
+      text-align:center;
+
+      margin-bottom:15px;
+
+      line-height:1.6;
+
+      font-size:14px;
+    }
+
+    label{
+
+      font-size:13px;
+    }
+
+    input, textarea{
+
+      width:100%;
+
+      padding:15px;
+
+      margin-top:5px;
+
+      margin-bottom:7px;
+
+      border:none;
+
+      border-radius:10px;
+
+      outline:none;
+
+      font-size:13px;
+    }
+
+    textarea{
+      resize:none;
+    }
+
+    button{
+
+      width:100%;
+
+      padding:10px;
+
+      border:none;
+
+      border-radius:10px;
+
+      background:#00c853;
+
+      color:rgb(0, 0, 0);
+
+      font-size:14px;
+
+      cursor:pointer;
+
+      transition:0.3s;
+    }
+
+    button:hover{
+
+      transform:scale(1.03);
+
+      background:#00e676;
+    }
+
+    .ig{
+
+      text-align:center;
+
+      margin-top:15px;
+
+      font-size:13px;
+    }
+
+    .ig a{
+
+      color:rgb(111, 79, 236);
+
+      text-decoration:none;
+
+      font-weight:bold;
+
+      transition:0.3s;
+    }
+
+    .ig a:hover{
+
+      color:#ff80ab;
+    }
+
+    /* Responsive Laptop Kecil */
+    @media screen and (max-height:700px){
+
+      .container{
+        transform:scale(0.92);
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <video autoplay muted loop playsinline class="bg-video">
+
+  <source src="background.mp4" type="video/mp4">
+
+</video>
+
+  <div class="container">
+
+    <!-- FOTO PROFIL -->
+    <img src="vadlin.jpg" class="profile">
+
+    <!-- JUDUL -->
+    <h2>Pendaftaran Zoom Belajar SolidWorks</h2>
+
+    <!-- INFO -->
+    <div class="info">
+
+      📅 18 Mei 2026 <br>
+
+      🕒 15.00 WIB <br>
+
+      💰 FREE
+
+    </div>
+
+
+      <label>Nama Lengkap</label>
+
+      <input
+      type="text"
+      name="nama"
+      placeholder="Masukkan nama">
+
+      <label>Nomor WhatsApp</label>
+
+      <input
+      type="text"
+      name="wa"
+      placeholder="Masukkan nomor WA">
+
+      <label>Email</label>
+
+      <input
+      type="text"
+      name="email"
+      placeholder="email@gmail.com">
+
+      <label>Asal Sekolah/Kampus</label>
+
+      <input
+      type="text"
+      name="kampus"
+      placeholder="Nama sekolah/kampus">
+
+      <label>Harapan Mengikuti Kelas</label>
+
+      <textarea
+      rows="4"
+      name="harapan"
+      placeholder="Tulis harapan kamu"></textarea>
+
+      <label>
+
+      <input type="checkbox" required>
+
+      Saya sudah melakukan pembayaran
+
+      </label>
+
+    <a
+      href="https://wa.me/6285182031124?text=Halo%20saya%20ingin%20mengirim%20bukti%20pembayaran%20kelas%20SolidWorks"
+      target="_blank"
+      class="wa-btn">
+
+Kirim Bukti Pembayaran via WhatsApp
+
+</a>
+
+      <!-- TOMBOL -->
+      <button type="submit">
+
+        Daftar Sekarang
+
+      </button>
+
+    </form>
+
+    <!-- INSTAGRAM -->
+    <div class="ig">
+
+      📱 Instagram <br><br>
+
+      <a href="https://www.instagram.com/reel/DYUFsNKTeT6/?utm_source=ig_web_copy_link"
+      target="_blank">
+
+      @vadlin.ra • @deviiryani_ • @trmt.24_
+
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
